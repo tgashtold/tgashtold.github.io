@@ -1,0 +1,49 @@
+.logo {
+	border-width: 1px;
+	border-style: solid;
+	padding: 0 35px 10px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	flex-shrink: 0;
+	&__description {
+		text-transform: uppercase;
+	}
+	&_thema_dark,
+	&_thema_dark_simple {
+		.logo__title {
+			@include logoFont(39px, 1);
+		}
+		.logo__title-last-letter {
+			color: $orange;
+		}
+		.logo__description {
+			@include logoFont(9px);
+		}
+		&:hover {
+			text-decoration: none;
+		}
+	}
+	&_thema_dark_simple {
+		color: $color-lightest;
+		border: 0;
+	}
+	&_thema_dark {
+		border-color: $grey-darkest;
+		color: $grey-darkest;
+	}
+	&_thema_light {
+		border-color: $color-lightest;
+		color: $grey-darkest;
+		color: $color-lightest;
+		.logo__title {
+			@include logoFont(50px, 1);
+		}
+		.logo__description {
+			@include logoFont(12px);
+		}
+		&:hover {
+			text-decoration: none;
+		}
+	}
+}

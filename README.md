@@ -1,2 +1,0 @@
-# tgashtold.github.io
-layout

@@ -1,0 +1,72 @@
+.button {
+	background-color: transparent;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-transform: uppercase;
+	border-width: 1px;
+	border-style: solid;
+	transition: .3;
+	@include mainFont-regular();
+
+	&__icon {
+		margin-right: 7px;
+		max-height: 13px;
+	}
+
+	&_white {
+		padding: 25px 0px;
+		min-width: 190px;
+		color: $color-lightest;
+		border-color: $color-lightest;
+
+		&:hover {
+			transition: .3;
+			background-color: $color-lightest;
+			color: $grey-darkest;
+		}
+	}
+
+	&_orange {
+		padding: 15px 25px;
+		min-width: 160px;
+		color: $orange;
+		border-color: $orange;
+		border-radius: 3px;
+
+		&:hover {
+			transition: .3;
+			background-color: $orange;
+			color: $color-lightest;
+		}
+	}
+
+	&-group {
+		display: flex;
+		flex-direction: row;
+
+		.button+.button {
+			margin-left: 30px;
+		}
+	}
+}
+
+@include media-max(768px) {
+	.button {
+		&_white {
+			padding: 18px 0px;
+			min-width: 150px;
+		}
+
+		&_orange {
+			padding: 10px 10px;
+			min-width: 140px;
+		}
+
+		&-group {
+			.button+.button {
+				margin-left: 15px;
+			}
+		}
+	}
+}

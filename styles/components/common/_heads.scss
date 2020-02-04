@@ -1,0 +1,59 @@
+.head-item_uppercase_dark,
+.head-item_uppercase_dark,
+.head-item_dark,
+.head-small_dark {
+	color: $font-grey;
+}
+
+.head-item_uppercase_light,
+.head-item_uppercase_light,
+.head-item_light,
+.head-text_light,
+.head-small_light,
+.head-main  {
+	color: $color-lightest;
+}
+
+.head-main {
+	@include mainFont-regular(72px);
+	text-transform: uppercase;
+
+}
+
+.head-section {
+	@include mainFont-bold(36px);
+	text-transform: uppercase;
+	color: $font-grey;
+}
+.head-item_uppercase_dark,
+.head-item_uppercase_light {
+	@include mainFont-regular(18px);
+	text-transform: uppercase;
+}
+
+.head-item_dark,
+.head-item_light {
+	@include mainFont-regular(18px);
+}
+
+.head-small_dark,
+.head-small_light {
+	@include mainFont-regular();
+}
+
+.head-text_dark,
+.head-text_light {
+	@include mainFont-regular(20px);
+}
+
+@include media-max(1024px) {
+	.head-section {
+		font-size: 25px;
+	}
+}
+
+@include media-max(500px) {
+	.head-section {
+		font-size: 18px;
+	}
+}

@@ -1,0 +1,17 @@
+.text-box {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	justify-content: center;
+
+	&__text,
+	&__head {
+		margin-bottom: 25px;
+	}
+
+	&__text {
+		&_cursive {
+			@include mainFont-light-italic();
+		}
+	}
+}

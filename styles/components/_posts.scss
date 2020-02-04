@@ -1,0 +1,42 @@
+.post {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    margin-bottom: 25px;
+
+    &__image {
+        max-width: 55px;
+
+        &-wrapper {
+            margin-right: 15px;
+        }
+    }
+
+    &__description {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    &__title {
+        transition: .3;
+
+        &:hover {
+            color: $orange;
+            transition: .3;
+        }
+    }
+
+    &__text,
+    &__details {
+        font-size: 13px;
+    }
+
+    &__text {
+        color: $grey-middle;
+    }
+
+    &__details {
+        color: $orange;
+    }
+}

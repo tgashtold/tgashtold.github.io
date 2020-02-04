@@ -1,0 +1,38 @@
+.icon-box {
+	position: relative;
+
+	&_hover,
+	&_initial {
+		position: absolute;
+	}
+
+	&_hover {
+		visibility: hidden;
+	}
+
+	&:hover {
+		.icon-box_hover {
+			visibility: visible;
+		}
+
+		.icon-box_initial {
+			visibility: hidden;
+		}
+	}
+}
+
+.icon-box_hide {
+	&_hover {
+		display: none;
+	}
+
+	&:hover {
+		.icon-box_hide_hover {
+			display: block;
+		}
+
+		.icon-box_hide_initial {
+			display: none;
+		}
+	}
+}

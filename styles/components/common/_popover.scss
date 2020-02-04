@@ -1,0 +1,35 @@
+.popover {
+	&-wrapper {
+		position: relative;
+	}
+
+	&__btn {
+		cursor: pointer;
+	}
+
+	&__window {
+		visibility: hidden;
+		position: absolute;
+		z-index: 5;
+		padding: 20px 25px;
+		background-color: $font-grey;
+		width: 250px;
+		border-radius: 6px;
+		top: 145%;
+		left: -35%;
+
+		&:before {
+			content: '';
+			width: 25px;
+			height: 25px;
+			position: absolute;
+			transform: rotate(45deg);
+			background-color: $font-grey;
+			top: -8px;
+		}
+	}
+}
+
+.visible {
+	visibility: visible !important;
+}

@@ -1,0 +1,14 @@
+.section-grid {
+	padding: 100px 0;
+	display: grid;
+	row-gap: 75px;
+
+	&__content {
+		display: grid;
+	}
+
+	&__title {
+		display: flex;
+		justify-content: center;
+	}
+}

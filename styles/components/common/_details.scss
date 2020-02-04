@@ -1,0 +1,27 @@
+.details {
+	&__btn {
+		cursor: pointer;
+
+		&_openned {
+			display: none;
+		}
+	}
+
+	&__field {
+		display: none;
+	}
+
+	&_visible {
+		display: block;
+	}
+
+	&_open {
+		.details__btn_closed {
+			display: none;
+		}
+
+		.details__btn_openned {
+			display: block;
+		}
+	}
+}

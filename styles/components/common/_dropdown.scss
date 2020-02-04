@@ -1,0 +1,48 @@
+.menu-dropdown {
+	position: absolute;
+	background-color: $grey-darkest;
+	width: max-content;
+	visibility: hidden;
+	top: 100%;
+	left: -60%;
+	border-radius: 3px;
+}
+
+.dropdown {
+	&__link {
+		color: $color-lightest;
+		position: relative;
+
+		&:before {
+			content: '';
+			width: 5px;
+			height: 5px;
+			border-radius: 50%;
+			background-color: $color-lightest;
+			position: absolute;
+			top: 48%;
+			left: -10%;
+		}
+
+		&:hover {
+			color: inherit;
+		}
+	}
+
+	&__item {
+		padding: 10px 80px 10px 40px;
+		color: $color-lightest;
+		transition: .3;
+		position: relative;
+
+		&:hover {
+			transition: .3;
+			background-color: $font-grey;
+
+			.dropup-menu {
+				visibility: visible;
+				transition: .3;
+			}
+		}
+	}
+}

@@ -1,0 +1,68 @@
+.section {
+  &-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 100px 0;
+  }
+
+  &__title {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 75px;
+  }
+
+  &__image {
+    margin: 0 auto;
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    &_right {
+      width: 48%;
+    }
+
+    &_left {
+      width: 49%;
+
+    }
+  }
+
+  &_covered_road {
+    background-size: cover;
+    background-image: url('../styles/images/sections/SECTION_BG.png');
+  }
+
+  &_covered_street {
+    background-size: cover;
+    background-image: url('../styles/images//sections/street_BG.png');
+  }
+
+  &__image {
+    width: 100%;
+  }
+
+}
+
+@include media-max(1024px) {
+  .section {
+    &__content {
+      flex-direction: column;
+
+      &_right,
+      &_left {
+        width: 100%;
+      }
+
+      &_left {
+        margin-bottom: 50px;
+      }
+    }
+  }
+}

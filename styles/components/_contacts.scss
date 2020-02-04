@@ -1,0 +1,22 @@
+.contacts {
+	&__text {
+		color: $color-lightest;
+		margin-bottom: 18px;
+	}
+
+	&__item {
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+		justify-content: center;
+		margin-bottom: 18px;
+	}
+
+	&__details {
+		color: $grey-middle;
+	}
+
+	&__links {
+		width: 100%;
+	}
+}

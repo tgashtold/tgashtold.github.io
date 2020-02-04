@@ -1,0 +1,17 @@
+.header {
+  box-shadow: 1px 1px 4px #a4a4a4;
+  width:100%;
+
+  &-top {
+    position: relative;
+
+  }
+
+  &__menu_top {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    z-index: 2;
+
+  }
+}

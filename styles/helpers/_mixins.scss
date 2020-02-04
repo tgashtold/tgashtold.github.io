@@ -1,0 +1,36 @@
+@mixin logoFont ($size, $height: normal, $weight: 400) {
+	font-weight: $weight;
+	font-family: 'SourceSansPro', sans-serif;
+	font-size: $size;
+	line-height: $height;
+}
+
+@mixin mainFont-bold ($size: 14px) {
+	font-family: 'OpenSans-Bold', sans-serif;
+	font-size: $size;
+	line-height: normal;
+}
+
+@mixin mainFont-regular ($size: 14px) {
+	font-family: 'OpenSans-Regular', sans-serif;
+	font-size: $size;
+	line-height: normal;
+}
+
+@mixin mainFont-light ($size: 14px) {
+	font-family: 'OpenSans-Light', sans-serif;
+	font-size: $size;
+	line-height: normal;
+}
+
+@mixin mainFont-light-italic ($size: 14px) {
+	font-family: 'OpenSans-LightItalic', sans-serif;
+	font-size: $size;
+	line-height: normal;
+}
+
+@mixin media-max($width) {
+	@media only screen and (max-width: $width) {
+		@content;
+	}
+}
